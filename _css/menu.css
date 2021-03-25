@@ -3,6 +3,7 @@
     width: 100%;
     height: 50px;
     line-height: 50px;
+    position: relative;
 }
 
 ul.menu-mobile, .lbl-mobile, #check{
@@ -31,6 +32,21 @@ ul.menu-desktop li a{
 
 ul.menu-desktop li a:hover{
     background-color: rgba(0,0,0,0.1);
+}
+
+/* --------------- */
+/* sub-menu */
+ul.sub-menu{
+    list-style-type: none;
+    display: none;
+}
+
+ul.sub-menu li{
+    background-color: #612557;
+}
+
+li.receita-menu:hover ul.sub-menu{
+    display: block;
 }
 
 /* ===================================== */
@@ -68,6 +84,37 @@ ul.menu-mobile li a:hover{
 #check:checked ~ ul.menu-mobile{
     margin-left: 0;
     transition: 0.5s;
+}
+
+/* ----------- */
+/* sub-menu-mobile */
+ul.sub-menu-mobile{
+    list-style-type: none;
+    display: none;
+}
+
+ul.receita-menu-mobile li{
+    background-color: #612557;
+}
+
+li.receita-menu-mobile:hover ul.sub-menu-mobile{
+    display: block;
+}
+
+/* ===================================== */
+/* menu footer */
+
+ul.menu-footer{
+    list-style-type: none;    
+}
+
+ul.menu-footer li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul.menu-footer li a:hover{
+    color: #000000;
 }
 
 /* ========================================================== */

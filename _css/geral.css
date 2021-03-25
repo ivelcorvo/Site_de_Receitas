@@ -5,3 +5,143 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
+
+:root{
+    --cor1: #a15294;
+}
+
+body{
+    background: url('cozinha-5.jpeg') center center no-repeat fixed; 
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.img-responsivo{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+}
+
+.conteiner{
+    width: 70%;
+    margin: auto;
+}
+
+.conteiner2{
+    width: 40%;
+    margin: auto;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.branco{
+    color: #fff;
+}
+
+.center{
+    text-align: center;
+}
+/* =============================================== */
+.principal{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* =============================================== */
+/* banner logo */
+.banner-logo{
+    width: 100%;
+    height: auto;
+    background-color: var(--cor1);   
+}
+
+.logo{
+    width: 100px;
+}
+
+.icone-logo{
+    max-width: 100%; 
+    margin: 15px;
+    
+}
+
+/* =============================================== */
+/* footer */
+footer{
+    background-color: var(--cor1);
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+nav.links-wrapper{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+ul.links{
+    list-style-type: none;
+}
+
+ul.links li{
+    text-align: center;
+    margin: 10px;
+}
+
+ul.links li a{
+    
+}
+
+ul.links li a img{
+    width: 50px;
+}
+
+/*--------------------  */
+.footer-wrapper{
+    padding: 20px 0;
+}
+
+.footer-item{
+    margin: 20px 10px;
+    width: 30%;
+}
+
+/* =============================================================== */
+/* media queri */
+@media only screen and (max-width: 1000px){
+    .conteiner{
+        width: 80%;
+        margin: auto;
+    }
+
+    /* ==================== */
+    .footer-item{
+        width: 45%;
+    }    
+}
+
+@media only screen and (max-width: 500px){
+    .conteiner{
+        width: 95%;
+        margin: auto;
+    }    
+
+    /* ==================== */
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .footer-item{
+        width: 100%;
+    }
+
+}

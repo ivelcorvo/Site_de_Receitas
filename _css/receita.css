@@ -1,0 +1,36 @@
+.principal-receita{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+article{
+    width: 46.2%;
+    margin: 20px;
+    border: 3px solid #612557;
+    padding: 20px;
+}
+
+
+.receita{
+    background-color: #a15294;
+    padding: 10px 0;
+}
+
+.titulo-receita{
+    background-color: #612557;
+}
+
+/* ========================================= */
+/* video */
+.video-wrapper{
+    position: relative;
+    padding-bottom: 50.25%;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+

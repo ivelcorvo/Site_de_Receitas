@@ -10,27 +10,73 @@
         <title>Receitas</title>
         <link rel="stylesheet" type="text/css" href="_css/geral.css">
         <link rel="stylesheet" type="text/css" href="_css/menu.css">
+        <link rel="stylesheet" type="text/css" href="_css/index.css">
     </head>
     <body>
         <header>
+            <div class="banner-logo">  
+                <div class="logo">
+                    <img src="_icones/chapeu-de-chefe.png" class="icone-logo">                
+                </div>                              
+            </div>
+
             <nav class="nav-wrapper">
                 <!-- menu desktop -->
                 <ul class="menu-desktop">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Receitas</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="receita-menu"><a href="receitas.html">Receitas</a>
+                        <ul class="sub-menu">
+                            <li><a href="receita.html">Doce</a></li>
+                            <li><a href="receita.html">salgado</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <!-- menu mobile -->
                 <label class="lbl-mobile" for="check">&#8801;</label>
                 <input type="checkbox" id="check">
                 <ul class="menu-mobile">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Receitas</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="receita-menu-mobile"><a href="receitas.html">Receitas</a>
+                        <ul class="sub-menu-mobile">
+                            <li><a href="receitas.html">Doce</a></li>
+                            <li><a href="receitas.html">Salgado</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
+        
+        <section class="principal conteiner">
+            hdglahdsgh
+        </section>
 
-        <section></section>
+        <footer>
+            <div class="footer-wrapper conteiner flex">
+                <div class="footer-item branco center">
+                    <p><spam class="titulo">Receitas</spam><br>Levi Alves Junior</p>
+                    <p>Copyright 2021<br>Todos os Direitor Reservados.</p>
+                </div>
+                <div class="footer-item branco center">
+                    <p>Dicas de receitas<br>práticas e deliciosas.</p>
+                </div>
+                <div class="footer-item center">
+                    <ul class="menu-footer">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="receitas.html">Receitas</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="conteiner">
+            <nav class="links-wrapper conteiner2">                
+                <ul class="links flex">
+                    <li><a href=""><img src="_icones/facebook.png"></a></li>
+                    <li><a href=""><img src="_icones/instagram.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/levi-alves-09b91a189/"><img src="_icones/linkedin.png"></a></li>
+                    <li><a href=""><img src="_icones/whatsapp.png"></a></li>
+                    <li><a href=""><img src="_icones/youtube.png"></a></li>
+                </ul>
+            </nav>
+        </footer>        
 
-        <footer></footer>
     </body>
 </html>
