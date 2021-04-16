@@ -1,3 +1,19 @@
+:root{
+    --cor1: #a15294;
+    --cor2: #612557;
+    --cor4: #fff;
+    --cor5: #000000;
+    --cor6: #878787;
+}
 
-
-
+section.principal .opcao{
+    border: 2px solid var(--cor6);
+    width:  49%;
+}
+section.principal .opcao a{
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--cor6);
+    display: block;
+    text-align: center;
+}

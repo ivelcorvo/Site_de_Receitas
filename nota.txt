@@ -1,0 +1,1 @@
+receita é o padrão para todos os outros (ex: salgado, doce)

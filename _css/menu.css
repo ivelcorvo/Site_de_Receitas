@@ -1,13 +1,19 @@
+/* ============================================================================================================================================= */
+/*                                                                  MENU                                                                         */
+/* ============================================================================================================================================= */
+:root{
+    --cor1: #a15294;
+    --cor2: #612557;
+    --cor4: #fff;
+    --cor5: #000000;
+}
+
 .nav-wrapper{
-    background-color: #612557;
+    background-color: var(--cor2);
     width: 100%;
     height: 50px;
     line-height: 50px;
     position: relative;
-}
-
-ul.menu-mobile, .lbl-mobile, #check{
-    display: none;
 }
 
 /* ===================================== */
@@ -17,19 +23,16 @@ ul.menu-desktop{
     width: 100%;
     display: flex;
 }
-
 ul.menu-desktop li{
     text-align: center;
 }
-
 ul.menu-desktop li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--cor4);
     display: block;
     height: 50px;
     padding: 0 20px 0;
 }
-
 ul.menu-desktop li a:hover{
     background-color: rgba(0,0,0,0.1);
 }
@@ -40,43 +43,42 @@ ul.sub-menu{
     list-style-type: none;
     display: none;
 }
-
 ul.sub-menu li{
-    background-color: #612557;
+    background-color: var(--cor2);
 }
-
 li.receita-menu:hover ul.sub-menu{
     display: block;
 }
 
 /* ===================================== */
 /* menu mobile */
+ul.menu-mobile, .lbl-mobile, #check{
+    display: none;
+}
+
 .lbl-mobile{
     width: 50px;
-    color: #fff;
+    color: var(--cor4);
     font-size: 30px;
     padding-left: 10px;
 }
 
 ul.menu-mobile{
     list-style-type: none;
-    width: 30%;
+    width: 200px;
     margin-left: -500px;
     transition: 0.5s;
 }
-
 ul.menu-mobile li{
     width: 100%;
-    background-color: #612557;
+    background-color: var(--cor2);
 }
-
 ul.menu-mobile li a{
     text-decoration: none;
     display: block;
-    color: #fff;
+    color: var(--cor4);
     padding-left: 10px;
 }
-
 ul.menu-mobile li a:hover{
     background-color: rgba(0,0,0,0.1);
 }
@@ -92,34 +94,28 @@ ul.sub-menu-mobile{
     list-style-type: none;
     display: none;
 }
-
 ul.receita-menu-mobile li{
-    background-color: #612557;
+    background-color: var(--cor2);
 }
-
 li.receita-menu-mobile:hover ul.sub-menu-mobile{
     display: block;
 }
 
 /* ===================================== */
 /* menu footer */
-
 ul.menu-footer{
     list-style-type: none;    
 }
-
 ul.menu-footer li a{
     text-decoration: none;
-    color: #fff;
+    color: var(--cor4);
 }
-
 ul.menu-footer li a:hover{
-    color: #000000;
+    color: var(--cor5);
 }
 
 /* ========================================================== */
 /* mdedia queri */
-
 @media only screen and (max-width: 1000px){
     ul.menu-desktop{
         display: none;
@@ -128,7 +124,6 @@ ul.menu-footer li a:hover{
         display: block;
     }
 }
-
 @media only screen and (max-width: 500px){
     ul.menu-desktop{
         display: none;

@@ -7,42 +7,56 @@
         <meta name="robots" content="index, nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Receitas</title>
+        <title>Receitas - Receitas</title>
+        <link rel="shortcut icon" type="imagem/png" href="_icones/chapeu-de-chefe.png">
         <link rel="stylesheet" type="text/css" href="_css/geral.css">
         <link rel="stylesheet" type="text/css" href="_css/menu.css">
         <link rel="stylesheet" type="text/css" href="_css/receitas.css">
     </head>
     <body>
         <header>
-            <div class="banner-logo">  
+            <div class="banner-logo flex">  
                 <div class="logo">
-                    <img src="_icones/chapeu-de-chefe.png" class="icone-logo">                
-                </div>                              
+                    <img src="_icones/chapeu-de-chefe.png" class="icone-logo img-responsivo">                
+                </div>    
+                <div class="nome">
+                    <span>RECEITAS</span>
+                </div>                           
             </div>
-
+            <!-- menu -->
             <nav class="nav-wrapper">
                 <!-- menu desktop -->
                 <ul class="menu-desktop">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="receitas.html">Receitas</a></li>
+                    <li class="receita-menu"><a href="receitas.html">Receitas</a>
+                        <ul class="sub-menu">
+                            <li><a href="doce.html">Doce</a></li>
+                            <li><a href="salgado.html">salgado</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <!-- menu mobile -->
                 <label class="lbl-mobile" for="check">&#8801;</label>
                 <input type="checkbox" id="check">
                 <ul class="menu-mobile">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="receitas.html">Receitas</a></li>
+                    <li class="receita-menu-mobile"><a href="receitas.html">Receitas</a>
+                        <ul class="sub-menu-mobile">
+                            <li><a href="doce.html">Doce</a></li>
+                            <li><a href="salgado.html">Salgado</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </header>
         
-        <section class="principal conteiner">
-            <div class="opcao"><a href="">Doce</a></div>            
-            <div class="opcao"><a href="">Salgado</a></div>                    
+        <section class="principal conteiner flex between">            
+            <div class="opcao"><a href="doce.html">Doce</a></div>            
+            <div class="opcao"><a href="salgado.html">Salgado</a></div>                    
         </section>        
 
         <footer>
-            <div class="footer-wrapper conteiner flex">
+            <div class="footer-wrapper conteiner flex wrap between">
                 <div class="footer-item branco center">
                     <p><spam class="titulo">Receitas</spam><br>Levi Alves Junior</p>
                     <p>Copyright 2021<br>Todos os Direitor Reservados.</p>
@@ -59,7 +73,7 @@
             </div>
             <hr class="conteiner">
             <nav class="links-wrapper conteiner2">                
-                <ul class="links flex">
+                <ul class="links flex wrap between">
                     <li><a href=""><img src="_icones/facebook.png"></a></li>
                     <li><a href=""><img src="_icones/instagram.png"></a></li>
                     <li><a href="https://www.linkedin.com/in/levi-alves-09b91a189/"><img src="_icones/linkedin.png"></a></li>

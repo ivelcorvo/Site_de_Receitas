@@ -8,6 +8,10 @@
 
 :root{
     --cor1: #a15294;
+    --cor2: #612557;
+    --cor4: #fff;
+    --cor5: #000000;
+    --cor6: #878787;
 }
 
 body{
@@ -16,6 +20,7 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .img-responsivo{
@@ -25,7 +30,11 @@ body{
 
 .flex{
     display: flex;
-    flex-wrap: wrap;    
+}
+.wrap{
+    flex-wrap: wrap;        
+}
+.between{
     justify-content: space-between;
 }
 
@@ -44,17 +53,19 @@ body{
 }
 
 .branco{
-    color: #fff;
+    color: var(--cor4);
 }
 
 .center{
     text-align: center;
 }
+
 /* =============================================== */
-.principal{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
+section.principal{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--cor4);
+    padding: 20px;
 }
 
 /* =============================================== */
@@ -64,15 +75,30 @@ body{
     height: auto;
     background-color: var(--cor1);   
 }
-
-.logo{
+.banner-logo .logo{
     width: 100px;
+    height: auto;
 }
-
-.icone-logo{
-    max-width: 100%; 
-    margin: 15px;
+.banner-logo .logo .icone-logo{ 
+    margin: 15px;   
+}
+.banner-logo .nome{
+    height: 100px;
     
+    padding-left: 50px;
+}
+.banner-logo .nome span{
+    font-size: 120px;
+    font-family: 'Arial Narrow Bold';
+}
+@media only screen and (max-width: 800px){
+    .banner-logo .logo{
+        width: 70px;
+    }
+    .banner-logo .nome span{
+        line-height: 100px;
+        font-size: 70px;
+    }    
 }
 
 /* =============================================== */
@@ -84,63 +110,53 @@ footer{
     padding: 50px 0;
 }
 
+.footer-wrapper{
+    padding: 20px 0;
+}
+.footer-wrapper .footer-item{
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+/* ============================ */
+/* icones links */
 nav.links-wrapper{
     margin-top: 50px;
     margin-bottom: 10px;
 }
-
 ul.links{
     list-style-type: none;
 }
-
 ul.links li{
     text-align: center;
     margin: 10px;
 }
-
-ul.links li a{
-    
-}
-
 ul.links li a img{
     width: 50px;
 }
 
-/*--------------------  */
-.footer-wrapper{
-    padding: 20px 0;
-}
+/* ============================================================================================================================================= */
+/*                                                                  MEDIA QUERY                                                                  */
+/* ============================================================================================================================================= */
 
-.footer-item{
-    margin: 20px 10px;
-    width: 30%;
-}
-
-/* =============================================================== */
-/* media queri */
 @media only screen and (max-width: 1000px){
     .conteiner{
         width: 80%;
-        margin: auto;
     }
-
     /* ==================== */
     .footer-item{
         width: 45%;
     }    
 }
-
 @media only screen and (max-width: 500px){
     .conteiner{
         width: 95%;
-        margin: auto;
     }    
-
     /* ==================== */
     .footer-wrapper{
         flex-direction: column;
     }
-    .footer-item{
+    .footer-wrapper .footer-item{
         width: 100%;
     }
 
