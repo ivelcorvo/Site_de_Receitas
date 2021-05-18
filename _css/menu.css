@@ -61,6 +61,7 @@ ul.menu-mobile, .lbl-mobile, #check{
     color: var(--cor4);
     font-size: 30px;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 ul.menu-mobile{
@@ -82,10 +83,17 @@ ul.menu-mobile li a{
 ul.menu-mobile li a:hover{
     background-color: rgba(0,0,0,0.1);
 }
-
 #check:checked ~ ul.menu-mobile{
     margin-left: 0;
     transition: 0.5s;
+}
+@media only screen and (max-width: 1000px){
+    ul.menu-desktop{
+        display: none;
+    }
+    ul.menu-mobile, .lbl-mobile{
+        display: block;
+    }
 }
 
 /* ----------- */
@@ -112,23 +120,4 @@ ul.menu-footer li a{
 }
 ul.menu-footer li a:hover{
     color: var(--cor5);
-}
-
-/* ========================================================== */
-/* mdedia queri */
-@media only screen and (max-width: 1000px){
-    ul.menu-desktop{
-        display: none;
-    }
-    ul.menu-mobile, .lbl-mobile{
-        display: block;
-    }
-}
-@media only screen and (max-width: 500px){
-    ul.menu-desktop{
-        display: none;
-    }
-    ul.menu-mobile, .lbl-mobile{
-        display: block;
-    }
 }

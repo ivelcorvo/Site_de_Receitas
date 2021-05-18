@@ -6,14 +6,16 @@
     --cor6: #878787;
 }
 
-section.principal .opcao{
+section.principal a.opcao{
     border: 2px solid var(--cor6);
     width:  49%;
-}
-section.principal .opcao a{
     font-size: 40px;
     text-decoration: none;
     color: var(--cor6);
     display: block;
     text-align: center;
+}
+section.principal a.opcao:hover{
+    color: var(--cor4);
+    background-color: var(--cor2);
 }

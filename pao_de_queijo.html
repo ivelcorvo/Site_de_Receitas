@@ -1,3 +1,4 @@
+<!-- essa é uma versão pronta para adicionar futuras receitas -->
 <!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
@@ -7,21 +8,21 @@
         <meta name="robots" content="index, nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Receitas - Home</title>
+        <title>Receitas</title>
         <link rel="shortcut icon" type="imagem/png" href="_icones/chapeu-de-chefe.png">
         <link rel="stylesheet" type="text/css" href="_css/geral.css">
         <link rel="stylesheet" type="text/css" href="_css/menu.css">
-        <link rel="stylesheet" type="text/css" href="_css/index.css">
+        <link rel="stylesheet" type="text/css" href="_css/receita.css">
     </head>
     <body>
         <header>
             <div class="banner-logo flex">  
                 <div class="logo">
                     <img src="_icones/chapeu-de-chefe.png" class="icone-logo img-responsivo">                
-                </div>    
+                </div> 
                 <div class="nome">
                     <span>RECEITAS</span>
-                </div>                          
+                </div>                              
             </div>
             <!-- menu -->
             <nav class="nav-wrapper">
@@ -31,7 +32,7 @@
                     <li class="receita-menu"><a href="receitas.html">Receitas</a>
                         <ul class="sub-menu">
                             <li><a href="doce.html">Doce</a></li>
-                            <li><a href="salgado.html">salgado</a></li>
+                            <li><a href="salgado.html">Salgado</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -50,10 +51,42 @@
             </nav>
         </header>
         
-        <section class="principal conteiner">
-            <span>Importante</span><br><br>
-            <blockquote>O objetivo desse site é treinar e aprimorar minhas técnicas html e css. Futuramente esse texto será excluído e um texto em contexto com o site será adicionado.</blockquote>
-        </section>
+        <main>
+            <section class="principal-receita conteiner">
+                <div class="receita center">
+                    <div class="titulo-receita"><span class="titulo branco">Pão de Queijo</span></div>
+                </div>            
+                <div>
+                    <div class="preparo flex">
+                        <article>
+                            <span><b>Ingredientes</b></span><br><br>
+                            <ul>
+                                <li>1 e meia xícara (chá) de leite</li>
+                                <li>1 colher (sopa) de tempero de carnes brancas</li>
+                                <li>meia xícara (chá) de óleo</li>
+                                <li>500 g de polvilho doce</li>
+                                <li>2 ovos ligeiramente batidos</li>
+                                <li>3 xícaras (chá) de queijo meia cura ralado</li>
+                            </ul>
+                        </article>
+                        <article>
+                            <span><b>Modo de preparo</b></span><br><br>
+                            <ol>
+                                <li>Em uma panela, ferva o leite com o tempero de carnes brancas e o óleo.</li>
+                                <li>Em um recipiente, coloque o polvilho e escalde-o, com o auxílio de colher de cabo longo, com a mistura fervente.</li>
+                                <li>Acrescente os ovos, alternando com o queijo e sovando bem após cada adição.</li>
+                                <li>Unte as mãos com óleo e enrole bolinhas de 2 cm de diâmetro.</li>
+                                <li>Coloque-as em uma assadeira untada com óleo.</li>
+                                <li>Asse em forno médio (180º C), preaquecido, por cerca de 30 minutos. Sirva.</li>
+                            </ol>                        
+                        </article>                         
+                    </div>  
+                    <figure class="foto-receita">
+                        <img src="_img/pao-de-queijo.jpg" alt="pao-de-queijo" class="img-responsivo">
+                    </figure>
+                </div>          
+            </section>
+        </main>
 
         <footer>
             <div class="footer-wrapper conteiner flex wrap between">

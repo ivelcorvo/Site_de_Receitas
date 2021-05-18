@@ -6,6 +6,72 @@
     --cor6: #878787;
 }
 
+/* ============================================================================================================================================= */
+/*                                                                  OPÇÃO DE RECEITA                                                             */
+/* ============================================================================================================================================= */
+/* ================================== */
+/* DOCE */
+.doces{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.doces a.doce{
+    width: 49%;   
+    margin-bottom: 20px; 
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--cor1);
+}
+.doces a.doce figure figcaption span{
+    color: var(--cor4);
+}
+.doces a.doce:hover{
+    opacity: 0.8;
+}
+@media only screen and (max-width: 800px){
+    .doces{
+        flex-direction: column;
+    }
+    .doces a.doce{
+        width: 100%;
+    }
+}
+
+/* ================================== */
+/* SALGADO */
+.salgados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.salgados a.salgado{
+    width: 49%;   
+    margin-bottom: 20px; 
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--cor1);
+}
+.salgados a.salgado figure figcaption span{
+    color: var(--cor4);
+}
+.salgados a.salgado:hover{
+    opacity: 0.8;
+}
+@media only screen and (max-width: 800px){
+    .salgados{
+        flex-direction: column;
+    }
+    .salgados a.salgado{
+        width: 100%;
+    }
+}
+
+
+
+/* ============================================================================================================================================= */
+/*                                                          CADA RECEITA (RECEITA.HTML)                                                          */
+/* ============================================================================================================================================= */
 section.principal-receita{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -56,12 +122,3 @@ article ul, article ol{
 figure.foto-receita{
     padding: 0 20px 20px;
 }
-
-/* ============================================================================================================================================= */
-/*                                                                  DOCE                                                                         */
-/* ============================================================================================================================================= */
-
-
-/* ============================================================================================================================================= */
-/*                                                                  SALGADO                                                                      */
-/* ============================================================================================================================================= */

@@ -1,3 +1,4 @@
+<!-- essa é uma versão pronta para adicionar futuras receitas -->
 <!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
@@ -7,21 +8,21 @@
         <meta name="robots" content="index, nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Receitas - Home</title>
+        <title>Receitas</title>
         <link rel="shortcut icon" type="imagem/png" href="_icones/chapeu-de-chefe.png">
         <link rel="stylesheet" type="text/css" href="_css/geral.css">
         <link rel="stylesheet" type="text/css" href="_css/menu.css">
-        <link rel="stylesheet" type="text/css" href="_css/index.css">
+        <link rel="stylesheet" type="text/css" href="_css/receita.css">
     </head>
     <body>
         <header>
             <div class="banner-logo flex">  
                 <div class="logo">
                     <img src="_icones/chapeu-de-chefe.png" class="icone-logo img-responsivo">                
-                </div>    
+                </div> 
                 <div class="nome">
                     <span>RECEITAS</span>
-                </div>                          
+                </div>                              
             </div>
             <!-- menu -->
             <nav class="nav-wrapper">
@@ -31,7 +32,7 @@
                     <li class="receita-menu"><a href="receitas.html">Receitas</a>
                         <ul class="sub-menu">
                             <li><a href="doce.html">Doce</a></li>
-                            <li><a href="salgado.html">salgado</a></li>
+                            <li><a href="salgado.html">Salgado</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -50,10 +51,38 @@
             </nav>
         </header>
         
-        <section class="principal conteiner">
-            <span>Importante</span><br><br>
-            <blockquote>O objetivo desse site é treinar e aprimorar minhas técnicas html e css. Futuramente esse texto será excluído e um texto em contexto com o site será adicionado.</blockquote>
-        </section>
+        <main>
+            <section class="principal-receita conteiner">
+                <div class="receita center">
+                    <div class="titulo-receita"><span class="titulo branco">Brigadeiro</span></div>
+                </div>            
+                <div>
+                    <div class="preparo flex">
+                        <article class="brigadeiro">
+                            <span><b>Ingredientes</b></span><br><br>
+                            <ul>
+                                <li>1 leite condensado (lata ou caixinha)</li>
+                                <li>3 colheres (sopa) de chocolate em pó</li>
+                                <li>1 colher (sopa) de manteiga</li>
+                                <li>1 xícara (chá) de chocolate granulado</li>
+                            </ul>
+                        </article>
+                        <article class="brigadeiro">
+                            <span><b>Modo de preparo</b></span><br><br>
+                            <ol>
+                                <li>Em uma panela, coloque o leite condensado com o chocolate em pó e a manteiga.</li>
+                                <li>Misture bem e leve ao fogo baixo, mexendo sempre até desprender do fundo da panela (cerca de 10 minutos).</li>
+                                <li>Retire do fogo, passe para um prato untado com manteiga e deixe esfriar.</li>
+                                <li>Com as mãos untadas, enrole em bolinhas e passe-as no granulado. Sirva em forminhas de papel.</li>
+                            </ol>                        
+                        </article>                         
+                    </div>  
+                    <figure class="foto-receita">
+                        <img src="_img/brigadeiro.jpg" alt="brigadeiro" class="img-responsivo">
+                    </figure>
+                </div>       
+            </section>
+        </main>
 
         <footer>
             <div class="footer-wrapper conteiner flex wrap between">
