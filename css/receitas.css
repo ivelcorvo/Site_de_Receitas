@@ -1,21 +1,24 @@
+/* AQUI é a opção de escolha que aparece se clicar em "receitas" no menu */
+
 :root{
-    --cor1: #a15294;
-    --cor2: #612557;
-    --cor4: #fff;
-    --cor5: #000000;
-    --cor6: #878787;
+    --palavraMenu: #fff;
+    --palavra: #fff;
+    --palavraConteudo: #878787; 
+    --corPadrao1: #a15294;
+    --corPadrao2: #612557;
+    --corSection: #fff;
 }
 
 section.principal a.opcao{
-    border: 2px solid var(--cor6);
+    border: 2px solid var(--palavraConteudo);
     width:  49%;
     font-size: 40px;
     text-decoration: none;
-    color: var(--cor6);
+    color: var(--palavraConteudo);
     display: block;
     text-align: center;
 }
 section.principal a.opcao:hover{
-    color: var(--cor4);
-    background-color: var(--cor2);
+    color: var(--corSection);
+    background-color: var(--corPadrao2);
 }

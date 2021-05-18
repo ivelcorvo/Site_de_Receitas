@@ -1,13 +1,14 @@
 :root{
-    --cor1: #a15294;
-    --cor2: #612557;
-    --cor4: #fff;
-    --cor5: #000000;
-    --cor6: #878787;
+    --palavraMenu: #fff;
+    --palavra: #fff;
+    --palavraConteudo: #878787; 
+    --corPadrao1: #a15294;
+    --corPadrao2: #612557;
+    --corSection: #fff;
 }
 
 /* ============================================================================================================================================= */
-/*                                                                  OPÇÃO DE RECEITA                                                             */
+/*                                                                  OPÇÕES DE RECEITA                                                             */
 /* ============================================================================================================================================= */
 /* ================================== */
 /* DOCE */
@@ -21,10 +22,10 @@
     margin-bottom: 20px; 
     padding: 10px;
     text-decoration: none;
-    background-color: var(--cor1);
+    background-color: var(--corPadrao1);
 }
 .doces a.doce figure figcaption span{
-    color: var(--cor4);
+    color: var(--palavra);
 }
 .doces a.doce:hover{
     opacity: 0.8;
@@ -50,7 +51,7 @@
     margin-bottom: 20px; 
     padding: 10px;
     text-decoration: none;
-    background-color: var(--cor1);
+    background-color: var(--corPadrao1);
 }
 .salgados a.salgado figure figcaption span{
     color: var(--cor4);
@@ -73,16 +74,16 @@
 /*                                                          CADA RECEITA (RECEITA.HTML)                                                          */
 /* ============================================================================================================================================= */
 section.principal-receita{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: var(--cor4);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--corSection);
 }
 section.principal-receita .receita{
-    background-color: var(--cor1);
+    background-color: var(--corPadrao1);
     padding: 10px 0;
 }
 section.principal-receita .receita .titulo-receita{
-    background-color: var(--cor2);
+    background-color: var(--corPadrao2);
 }
 
 .preparo{
@@ -91,18 +92,18 @@ section.principal-receita .receita .titulo-receita{
 }
 .preparo article{
     width: 49%;
-    border: 3px solid var(--cor2);
+    border: 3px solid var(--corPadrao2);
     padding: 20px;
     margin-bottom: 20px;
 }
 /* modo de preparo e ingrdientes generalizado */
 article span{
     font-size: 40px;
-    color: var(--cor6);
+    color: var(--palavraConteudo);
 }
 article p, article ul li, article ol li{
     font-size: 20px;
-    color: var(--cor6);
+    color: var(--palavraConteudo);
 }
 article ul, article ol{
     padding-left: 20px;

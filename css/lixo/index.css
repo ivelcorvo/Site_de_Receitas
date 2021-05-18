@@ -1,0 +1,17 @@
+:root{
+    --palavraMenu: #fff;
+    --palavra: #fff;
+    --palavraConteudo: #878787; 
+    --corPadrao1: #a15294;
+    --corPadrao2: #612557;
+    --corSection: #fff;
+}
+
+section.principal span{
+    font-size: 50px;
+    color: var(--palavraConteudo);
+}
+section.principal blockquote{
+    font-size: 20px;
+    color: var(--palavraConteudo)
+}

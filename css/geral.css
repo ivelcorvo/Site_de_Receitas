@@ -12,6 +12,13 @@
     --cor4: #fff;
     --cor5: #000000;
     --cor6: #878787;
+
+    --palavraMenu: #fff;
+    --palavra: #fff;
+    --palavraConteudo: #878787; 
+    --corPadrao1: #a15294;
+    --corPadrao2: #612557;
+    --corSection: #fff;
 }
 
 body{
@@ -23,6 +30,9 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* ============================================================================================================= */
+/*                                              GERAL                                                            */
+/* ============================================================================================================= */
 .img-responsivo{
     max-width: 100%;
     height: auto;
@@ -42,10 +52,19 @@ body{
     width: 70%;
     margin: auto;
 }
-
 .conteiner2{
     width: 40%;
     margin: auto;
+}
+@media only screen and (max-width: 1000px){
+    .conteiner{
+        width: 80%;
+    } 
+}
+@media only screen and (max-width: 500px){
+    .conteiner{
+        width: 95%;
+    }    
 }
 
 .titulo{
@@ -60,20 +79,13 @@ body{
     text-align: center;
 }
 
-/* =============================================== */
-section.principal{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: var(--cor4);
-    padding: 20px;
-}
 
 /* =============================================== */
-/* banner logo */
+/* BANNER LOGO */
 .banner-logo{
     width: 100%;
     height: auto;
-    background-color: var(--cor1);   
+    background-color: var(--corPadrao1);   
 }
 .banner-logo .logo{
     width: 100px;
@@ -90,8 +102,9 @@ section.principal{
 .banner-logo .nome span{
     font-size: 120px;
     font-family: 'Arial Narrow Bold';
+    color: var(--palavra);
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){
     .banner-logo .logo{
         width: 70px;
     }
@@ -100,22 +113,70 @@ section.principal{
         font-size: 70px;
     }    
 }
+@media only screen and (max-width: 500px){
+    .banner-logo .nome span{
+        font-size: 40px;
+    }
+}
 
 /* =============================================== */
-/* footer */
+/* MAIN */
+section.principal{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--corSection);
+    padding: 20px;
+}
+section.principal span{
+    font-size: 50px;
+    color: var(--palavraConteudo);
+}
+section.principal blockquote{
+    font-size: 20px;
+    color: var(--palavraConteudo)
+}
+
+/* =============================================== */
+/* RODAPÉ */
 footer{
-    background-color: var(--cor1);
+    background-color: var(--corPadrao1);
     width: 100%;
     height: auto;
     padding: 50px 0;
 }
-
-.footer-wrapper{
+footer .footer-wrapper{
     padding: 20px 0;
 }
-.footer-wrapper .footer-item{
+footer .footer-wrapper .footer-item{
     width: 30%;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+}
+@media only screen and (max-width: 1000px){
+    footer .footer-wrapper .footer-item{
+        width: 45%;
+    }    
+}
+@media only screen and (max-width: 500px){
+    footer .footer-wrapper{
+        flex-direction: column;
+    }
+    footer .footer-wrapper .footer-item{
+        width: 100%;
+    }
+
+}
+
+/* =========================== */
+/* menu do rodapé  */
+ul.menu-footer{
+    list-style-type: none;    
+}
+ul.menu-footer li a{
+    text-decoration: none;
+    color: var(--palavra);
+}
+ul.menu-footer li a:hover{
+    color: var(--cor5);
 }
 
 /* ============================ */
@@ -133,31 +194,4 @@ ul.links li{
 }
 ul.links li a img{
     width: 50px;
-}
-
-/* ============================================================================================================================================= */
-/*                                                                  MEDIA QUERY                                                                  */
-/* ============================================================================================================================================= */
-
-@media only screen and (max-width: 1000px){
-    .conteiner{
-        width: 80%;
-    }
-    /* ==================== */
-    .footer-item{
-        width: 45%;
-    }    
-}
-@media only screen and (max-width: 500px){
-    .conteiner{
-        width: 95%;
-    }    
-    /* ==================== */
-    .footer-wrapper{
-        flex-direction: column;
-    }
-    .footer-wrapper .footer-item{
-        width: 100%;
-    }
-
 }
