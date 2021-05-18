@@ -54,7 +54,7 @@
     background-color: var(--corPadrao1);
 }
 .salgados a.salgado figure figcaption span{
-    color: var(--cor4);
+    color: var(--palavra);
 }
 .salgados a.salgado:hover{
     opacity: 0.8;
