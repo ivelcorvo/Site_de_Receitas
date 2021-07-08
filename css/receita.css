@@ -28,7 +28,7 @@
     color: var(--palavra);
 }
 .doces a.doce:hover{
-    opacity: 0.8;
+    /* opacity: 0.8; */
 }
 @media only screen and (max-width: 800px){
     .doces{
@@ -69,12 +69,11 @@
 }
 
 
-
 /* ============================================================================================================================================= */
 /*                                                          CADA RECEITA (RECEITA.HTML)                                                          */
 /* ============================================================================================================================================= */
 section.principal-receita{
-    margin-top: 100px;
+    margin-top: 287px;
     margin-bottom: 100px;
     background-color: var(--corSection);
 }

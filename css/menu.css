@@ -15,7 +15,14 @@
     width: 100%;
     height: 50px;
     line-height: 50px;
-    position: relative;
+    position: fixed;
+    top: 137px;
+}
+@media only screen and (max-width: 1000px){
+    .nav-wrapper{
+        top: 103px;
+    }
+    
 }
 
 /* ===================================== */
@@ -68,7 +75,7 @@ ul.menu-mobile, .lbl-mobile, #check{
 
 ul.menu-mobile{
     list-style-type: none;
-    width: 200px;
+    width: 100%;
     margin-left: -500px;
     transition: 0.5s;
 }
